@@ -1,9 +1,9 @@
 <div ng-app="app">
   <div ng-controller="exampleCtrl">
-    <input ng-model = "message">
-    {{ message }}
-  <div ng-repeat="review in reviews" ng-click="taskComplete($index)">
-  <input ng-model = "review" >
+<!--     <input ng-model = "message">
+    {{ message }} -->
+  <div ng-repeat="review in reviews" ng-click="taskComplete($index)" ng-if="isPositive(review)">
+  <!-- <input ng-model = "review" > -->
     {{review}}
   </div>
   Add Review: <input ng-model="newReview">
